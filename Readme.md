@@ -4,7 +4,7 @@ A simple boilerplate for a JavaScript project that uses Webpack for building.
 
 
 ## Running locally:
-- git clone
+- git clone https://github.com/craigstroman/webpack-boilerplate.git
 - cd webpack-boilerplate
 - Run the command `npm install`
 - To start the server run the command `npm run start`
