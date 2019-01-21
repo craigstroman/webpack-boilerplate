@@ -1,0 +1,38 @@
+{
+  "name": "webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for using Webpack to build JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel dev:server lint:watch",
+    "dev:server": "webpack-dev-server --mode development --hot --inline",
+    "lint": "node_modules/.bin/esw webpack.config.* src --color",
+    "lint:watch": "npm run lint -- --watch",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "Craig Stroman",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-watch": "^4.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1"
+  }
+}
